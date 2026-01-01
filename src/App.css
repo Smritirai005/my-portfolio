@@ -1,0 +1,39 @@
+.app {
+  min-height: 100vh;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+main {
+  padding: 0;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Section spacing */
+section {
+  padding: 80px 20px;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 968px) {
+  section {
+    padding: 70px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 60px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    padding: 50px 10px;
+  }
+}
+

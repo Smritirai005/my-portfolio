@@ -1,0 +1,45 @@
+.cursor {
+  width: 0;
+  height: 0;
+  border-left: 2px solid transparent;
+  border-right: 12px solid #ff6b9d;
+  border-top: 2px solid transparent;
+  border-bottom: 12px solid transparent;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transform-origin: 0 0;
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.3));
+  will-change: transform;
+}
+
+.cursor::after {
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  width: 0;
+  height: 0;
+  border-left: 2px solid transparent;
+  border-right: 10px solid #ffb3d1;
+  border-top: 2px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+.cursor-dot {
+  display: none;
+}
+
+.cursor.hover {
+  transform: scale(1.2);
+}
+
+.cursor.click {
+  transform: scale(0.9);
+}
+
+/* Hide default cursor on interactive elements */
+a, button, .nav-link, .theme-toggle-corner, .project-link, .submit-btn, .social-link {
+  cursor: none !important;
+}
+

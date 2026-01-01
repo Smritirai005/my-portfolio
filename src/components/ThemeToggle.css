@@ -1,0 +1,71 @@
+.theme-toggle-corner {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1001;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px) saturate(180%);
+  -webkit-backdrop-filter: blur(15px) saturate(180%);
+  border: 1.5px solid rgba(255, 107, 157, 0.3);
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.light-mode.theme-toggle-corner {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 107, 157, 0.3);
+  color: var(--light-text);
+}
+
+.dark-mode.theme-toggle-corner {
+  background: rgba(21, 21, 21, 0.15);
+  border-color: rgba(255, 107, 157, 0.3);
+  color: var(--dark-text);
+}
+
+.theme-toggle-corner:hover {
+  transform: scale(1.1) rotate(15deg);
+  background: rgba(255, 107, 157, 0.2);
+  border-color: rgba(255, 107, 157, 0.5);
+  box-shadow: 0 6px 25px rgba(255, 107, 157, 0.3);
+}
+
+.light-mode.theme-toggle-corner:hover {
+  color: var(--light-accent);
+}
+
+.dark-mode.theme-toggle-corner:hover {
+  color: var(--dark-accent);
+}
+
+.theme-toggle-corner:active {
+  transform: scale(0.95) rotate(-15deg);
+}
+
+@media (max-width: 768px) {
+  .theme-toggle-corner {
+    top: 15px;
+    right: 15px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .theme-toggle-corner {
+    top: 12px;
+    right: 12px;
+    padding: 8px;
+  }
+  
+  .theme-toggle-corner svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+

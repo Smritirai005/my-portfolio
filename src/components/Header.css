@@ -1,0 +1,156 @@
+.header {
+  position: sticky;
+  top: 20px;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  margin: 0 auto;
+  max-width: 800px;
+  width: fit-content;
+}
+
+.header.light-mode {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1.5px solid rgba(255, 107, 157, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+  border-radius: 50px;
+}
+
+.header.dark-mode {
+  background: rgba(21, 21, 21, 0.1);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1.5px solid rgba(255, 107, 157, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  border-radius: 50px;
+}
+
+.header-container {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  gap: 30px;
+}
+
+.nav {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+@media (max-width: 968px) {
+  .header-container {
+    padding: 18px 30px;
+    gap: 25px;
+  }
+  
+  .nav {
+    gap: 20px;
+  }
+  
+  .nav-link {
+    font-size: 0.88rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    top: 10px;
+    width: calc(100% - 20px);
+    max-width: 100%;
+  }
+  
+  .header-container {
+    padding: 16px 20px;
+    border-radius: 30px;
+    gap: 15px;
+  }
+  
+  .nav {
+    gap: 12px;
+  }
+  
+  .nav-link {
+    font-size: 0.8rem;
+    padding: 4px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-container {
+    padding: 14px 15px;
+    gap: 10px;
+  }
+  
+  .nav {
+    gap: 10px;
+  }
+  
+  .nav-link {
+    font-size: 0.75rem;
+  }
+}
+
+.light-mode .nav-link {
+  color: var(--light-text);
+}
+
+.dark-mode .nav-link {
+  color: var(--dark-text);
+}
+
+.nav-link:hover {
+  color: var(--light-accent);
+}
+
+.dark-mode .nav-link:hover {
+  color: var(--dark-accent);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--light-accent);
+  transition: width 0.3s ease;
+}
+
+.dark-mode .nav-link::after {
+  background: var(--dark-accent);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+
+@media (max-width: 768px) {
+  .header-container {
+    padding: 18px 25px;
+  }
+  
+  .nav {
+    gap: 15px;
+  }
+  
+  .nav-link {
+    font-size: 0.85rem;
+  }
+}
+

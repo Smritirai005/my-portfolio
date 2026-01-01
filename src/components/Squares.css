@@ -1,0 +1,25 @@
+.squares-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+.squares-canvas.background {
+  pointer-events: none;
+}
+
+/* Dark mode specific styling */
+.dark-mode .squares-canvas {
+  opacity: 0.5;
+}
+
+/* Light mode specific styling */
+.light-mode .squares-canvas {
+  opacity: 0.3;
+}
+
