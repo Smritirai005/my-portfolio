@@ -1,4 +1,4 @@
-# Aesthetic Portfolio
+#  Portfolio
 
 A beautiful, modern portfolio website with light and dark mode themes. Features a cute pink/white aesthetic for light mode and a sleek, classy design for dark mode.
 
