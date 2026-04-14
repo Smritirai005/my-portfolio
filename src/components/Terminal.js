@@ -22,42 +22,44 @@ const Terminal = () => {
 - clear: Clear the terminal
 - help: Show this help message`,
 
-    about: `I'm a passionate developer who loves creating beautiful and functional web experiences. 
-I enjoy turning complex problems into simple, elegant solutions. 
-I'm always learning and exploring new technologies to build better products.`,
+    about: `Computer Science undergraduate interested in Cloud Technologies, AI-powered applications, and Full-Stack Development.
+Experienced in building AI-driven dashboards, integrating LLMs, and deploying containerized applications.`,
 
     skills: `Technical Skills:
-• Frontend: React, JavaScript, TypeScript, HTML5, CSS3
-• Backend: Node.js, Express, Python
-• Tools: Git, VS Code, Figma
-• Other: UI/UX Design, Responsive Design, API Integration`,
+• Programming: Python, C++, JavaScript
+• AI & ML: LLM Integration, Prompt Engineering, AI-powered Applications
+• Cloud: AWS (EC2, S3), Docker, GitHub Actions (CI/CD)
+• Full-Stack: React.js, Next.js, FastAPI, Node.js
+• Databases: PostgreSQL, MongoDB, Supabase, Firebase
+• Core CS: DSA, DBMS, Operating Systems, OOP
+• Tools: Git, Postman`,
 
     experience: `Work Experience:
-• Software Developer (2023 - Present)
-  - Developed and maintained web applications
-  - Collaborated with cross-functional teams
-  
-• Frontend Developer (2021 - 2023)
-  - Built responsive user interfaces
-  - Optimized application performance`,
+• GeeksforGeeks Student Chapter - Bennett University (Aug 2023 – 2024)
+  - Orchestrated 8+ hackathons managing 500+ participants and 3-day event logistics.
+
+• IEEE Student Branch - Bennett University (Aug 2023 – 2024)
+  - Built a club management website (React, Node.js, MongoDB) serving 300+ members with 95% uptime.
+  - Supported technical infrastructure for 12+ workshops with zero downtime live streaming (500+ viewers).`,
 
     education: `Education:
-• Bachelor's Degree in Computer Science
-• Various online courses and certifications
-• Continuous learning through projects and practice`,
+• Bennett University, Greater Noida (2023 – 2027)
+• B.Tech in Computer Science and Engineering — CGPA: 8.36
+• Specialization: Cloud Computing`,
 
     contact: `Contact Information:
-• Email: your.email@example.com
-• GitHub: github.com/yourusername
-• LinkedIn: linkedin.com/in/yourprofile
-• Twitter: @yourusername`,
+• Email: smritirai2005@gmail.com
+• GitHub: github.com/Smritirai005
+• LinkedIn: linkedin.com/in/SmritiRai`,
 
     projects: `Featured Projects:
-• Project One - A beautiful web application
-• Project Two - An innovative solution
-• Project Three - A creative project
+• LogSentinel (March 2026)
+  - Real-time log anomaly detection with an LSTM Autoencoder.
+  - AWS pipeline: CloudWatch → Kinesis → Lambda → SageMaker; alerts via SNS; Grafana dashboard.
 
-Type "projects" in the navigation to see more details!`,
+• Urja Arena (April 2025)
+  - Gamified environmental learning platform with quizzes, tasks, leaderboards.
+  - AI chatbot for concept explanations and personalized learning support.`,
 
     clear: ''
   };
@@ -129,4 +131,6 @@ Type "projects" in the navigation to see more details!`,
 };
 
 export default Terminal;
+
+
 

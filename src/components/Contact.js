@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Mail, Linkedin, Twitter, Github } from 'lucide-react';
+import { Mail, Linkedin, Github } from 'lucide-react';
 import ThemeContext from '../context/ThemeContext';
 import './Contact.css';
 
@@ -7,21 +7,20 @@ const Contact = () => {
   const { theme } = useContext(ThemeContext);
 
   const socialLinks = [
-    { icon: Mail, label: 'Email', url: 'mailto:your.email@example.com' },
-    { icon: Github, label: 'GitHub', url: 'https://github.com' },
-    { icon: Linkedin, label: 'LinkedIn', url: 'https://linkedin.com' },
-    { icon: Twitter, label: 'Twitter', url: 'https://twitter.com' }
+    { icon: Mail, label: 'Email', url: 'mailto:smritirai2005@gmail.com' },
+    { icon: Github, label: 'GitHub', url: 'https://github.com/Smritirai005' },
+    { icon: Linkedin, label: 'LinkedIn', url: 'https://linkedin.com/in/SmritiRai' }
   ];
 
   return (
     <section id="contact" className={`contact ${theme}-mode`}>
       <div className="contact-container">
         <h2 className="section-title">Get In Touch</h2>
-        <p className="section-subtitle">Let's create something amazing together</p>
+        <p className="section-subtitle">Open to internships, collaborations, and project work</p>
         <div className="contact-content">
           <div className="contact-info">
             <p className="contact-text">
-              I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+              I’m always open to discussing new projects, AI + cloud ideas, and opportunities to build impactful products.
             </p>
             <div className="social-links">
               {socialLinks.map((social, index) => {
@@ -80,4 +79,6 @@ const Contact = () => {
 };
 
 export default Contact;
+
+
 

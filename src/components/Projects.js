@@ -9,57 +9,21 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'Project One',
-      description: 'A beautiful web application built with React and modern design principles.',
-      tech: ['React', 'TypeScript', 'Tailwind'],
-      github: 'https://github.com',
-      live: 'https://example.com',
+      title: 'LogSentinel',
+      description: 'Real-time log anomaly detection with an LSTM Autoencoder and an AWS streaming pipeline, with alerts + Grafana monitoring.',
+      tech: ['Python', 'AWS SageMaker', 'Kinesis', 'Lambda', 'CloudWatch', 'Grafana', 'SNS'],
+      github: 'https://github.com/Smritirai005',
+      live: null,
       size: 'large'
     },
     {
       id: 2,
-      title: 'Project Two',
-      description: 'An innovative solution for modern problems.',
-      tech: ['Next.js', 'Node.js'],
-      github: 'https://github.com',
-      live: 'https://example.com',
+      title: 'Urja Arena',
+      description: 'Gamified environmental learning platform with quizzes, tasks, competitions, leaderboards, and an AI chatbot for personalized support.',
+      tech: ['Next.js', 'React', 'Supabase', 'Firebase Auth', 'Gemini API', 'Serverless Functions'],
+      github: 'https://github.com/Smritirai005',
+      live: null,
       size: 'medium'
-    },
-    {
-      id: 3,
-      title: 'Project Three',
-      description: 'A creative project showcasing design skills.',
-      tech: ['React', 'CSS3'],
-      github: 'https://github.com',
-      live: 'https://example.com',
-      size: 'medium'
-    },
-    {
-      id: 4,
-      title: 'Project Four',
-      description: 'A minimalist approach to web development.',
-      tech: ['Vue.js', 'Firebase'],
-      github: 'https://github.com',
-      live: 'https://example.com',
-      size: 'small'
-    },
-    {
-      id: 5,
-      title: 'Project Five',
-      description: 'Exploring new technologies and frameworks.',
-      tech: ['React', 'GraphQL'],
-      github: 'https://github.com',
-      live: 'https://example.com',
-      size: 'small'
-    },
-    {
-      id: 6,
-      title: 'Project Six',
-      description: 'A full-stack application with modern architecture.',
-      tech: ['MERN', 'MongoDB'],
-      github: 'https://github.com',
-      live: 'https://example.com',
-      size: 'large'
     }
   ];
 
@@ -67,7 +31,7 @@ const Projects = () => {
     <section id="projects" className={`projects ${theme}-mode`}>
       <div className="projects-container">
         <h2 className="section-title">Projects</h2>
-        <p className="section-subtitle">A collection of my recent work</p>
+        <p className="section-subtitle">Selected projects from my resume</p>
         <div className="projects-grid">
           {projects.map((project) => (
             <div
@@ -93,16 +57,18 @@ const Projects = () => {
                     <Github size={18} />
                     <span>GitHub</span>
                   </a>
-                  <a
-                    href={project.live}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="project-link"
-                    aria-label="Live Demo"
-                  >
-                    <ExternalLink size={18} />
-                    <span>Live Demo</span>
-                  </a>
+                  {project.live && (
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-link"
+                      aria-label="Live Demo"
+                    >
+                      <ExternalLink size={18} />
+                      <span>Live Demo</span>
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
@@ -114,4 +80,6 @@ const Projects = () => {
 };
 
 export default Projects;
+
+
 

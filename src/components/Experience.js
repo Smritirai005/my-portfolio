@@ -8,30 +8,21 @@ const Experience = () => {
   const experiences = [
     {
       id: 1,
-      title: 'Software Developer',
-      company: 'Company Name',
-      location: 'Location',
-      period: '2023 - Present',
-      description: 'Developed and maintained web applications using modern technologies. Collaborated with cross-functional teams to deliver high-quality software solutions.',
-      technologies: ['React', 'Node.js', 'TypeScript']
+      title: 'Management Team Member',
+      company: 'GeeksforGeeks Student Chapter - Bennett University',
+      location: 'Greater Noida, India',
+      period: 'Aug 2023 – 2024',
+      description: 'Orchestrated 8+ hackathons, managing 500+ participants and multi-day event logistics.',
+      technologies: ['Leadership', 'Event Ops', 'Community']
     },
     {
       id: 2,
-      title: 'Frontend Developer',
-      company: 'Previous Company',
-      location: 'Location',
-      period: '2021 - 2023',
-      description: 'Built responsive and interactive user interfaces. Optimized application performance and improved user experience.',
-      technologies: ['JavaScript', 'CSS3', 'Vue.js']
-    },
-    {
-      id: 3,
-      title: 'Junior Developer',
-      company: 'First Company',
-      location: 'Location',
-      period: '2020 - 2021',
-      description: 'Started my journey in software development. Learned best practices and contributed to various projects.',
-      technologies: ['HTML5', 'JavaScript', 'React']
+      title: 'Technical Team',
+      company: 'IEEE Student Branch - Bennett University',
+      location: 'Greater Noida, India',
+      period: 'Aug 2023 – 2024',
+      description: 'Engineered a club management website (React.js, Node.js, MongoDB) serving 300+ members with 95% uptime, and supported 12+ workshops with zero downtime live streams (500+ viewers).',
+      technologies: ['React', 'Node.js', 'MongoDB']
     }
   ];
 
@@ -39,7 +30,7 @@ const Experience = () => {
     <section id="experience" className={`experience ${theme}-mode`}>
       <div className="experience-container">
         <h2 className="section-title">Experience</h2>
-        <p className="section-subtitle">My professional journey</p>
+        <p className="section-subtitle">Leadership & technical contributions</p>
         <div className="timeline">
           {experiences.map((exp, index) => (
             <div key={exp.id} className={`timeline-item ${theme}-mode`}>
@@ -69,4 +60,6 @@ const Experience = () => {
 };
 
 export default Experience;
+
+
 

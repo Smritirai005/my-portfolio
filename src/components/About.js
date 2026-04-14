@@ -15,14 +15,18 @@ const About = () => {
             <span className="name">Smriti Rai</span>
           </h1>
           <p className="about-description">
-            A passionate developer who loves creating beautiful and functional web experiences. 
-            I enjoy turning complex problems into simple, elegant solutions.
+            Computer Science undergraduate with a strong interest in Cloud Technologies, AI-powered applications, and Full-Stack
+            Development. Experienced in building AI-driven dashboards, integrating Large Language Models (LLMs), and deploying
+            containerized applications. Comfortable working across frontend, APIs, databases, and cloud platforms with a focus on clean,
+            maintainable code.
           </p>
           <div className="about-tags">
+            <span className="tag">Cloud</span>
+            <span className="tag">AI (LLMs)</span>
+            <span className="tag">Full-Stack</span>
+            <span className="tag">AWS</span>
+            <span className="tag">Docker</span>
             <span className="tag">React</span>
-            <span className="tag">JavaScript</span>
-            <span className="tag">UI/UX</span>
-            <span className="tag">Design</span>
           </div>
         </div>
         <Terminal />

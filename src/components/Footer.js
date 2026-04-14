@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Heart, Mail, Phone, MapPin, Github, Linkedin, Twitter } from 'lucide-react';
+import { Heart, Mail, Phone, MapPin, Github, Linkedin } from 'lucide-react';
 import ThemeContext from '../context/ThemeContext';
 import './Footer.css';
 
@@ -16,19 +16,19 @@ const Footer = () => {
             <div className="footer-contact">
               <div className="contact-item">
                 <Mail size={18} className="contact-icon" />
-                <a href="mailto:your.email@example.com" className="contact-link">
-                  your.email@example.com
+                <a href="mailto:smritirai2005@gmail.com" className="contact-link">
+                  smritirai2005@gmail.com
                 </a>
               </div>
               <div className="contact-item">
                 <Phone size={18} className="contact-icon" />
-                <a href="tel:+1234567890" className="contact-link">
-                  +1 (234) 567-890
+                <a href="tel:+919455758887" className="contact-link">
+                  +91 94557 58887
                 </a>
               </div>
               <div className="contact-item">
                 <MapPin size={18} className="contact-icon" />
-                <span className="contact-text">Your City, Country</span>
+                <span className="contact-text">Greater Noida, India</span>
               </div>
             </div>
           </div>
@@ -36,17 +36,13 @@ const Footer = () => {
           <div className="footer-section">
             <h3 className="footer-section-title">Social</h3>
             <div className="footer-social">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-link-footer">
+              <a href="https://github.com/Smritirai005" target="_blank" rel="noopener noreferrer" className="social-link-footer">
                 <Github size={20} />
                 <span>GitHub</span>
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-link-footer">
+              <a href="https://linkedin.com/in/SmritiRai" target="_blank" rel="noopener noreferrer" className="social-link-footer">
                 <Linkedin size={20} />
                 <span>LinkedIn</span>
-              </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-link-footer">
-                <Twitter size={20} />
-                <span>Twitter</span>
               </a>
             </div>
           </div>
