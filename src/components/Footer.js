@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
-import { Heart, Mail, Phone, MapPin, Github, Linkedin } from 'lucide-react';
+import { Heart, Mail, Phone, MapPin, Github, Linkedin, Code2, Download } from 'lucide-react';
 import ThemeContext from '../context/ThemeContext';
+import { LINKS } from '../data/links';
 import './Footer.css';
 
 const Footer = () => {
@@ -16,8 +17,8 @@ const Footer = () => {
             <div className="footer-contact">
               <div className="contact-item">
                 <Mail size={18} className="contact-icon" />
-                <a href="mailto:smritirai2005@gmail.com" className="contact-link">
-                  smritirai2005@gmail.com
+                <a href={LINKS.emailHref} className="contact-link">
+                  {LINKS.email}
                 </a>
               </div>
               <div className="contact-item">
@@ -36,13 +37,27 @@ const Footer = () => {
           <div className="footer-section">
             <h3 className="footer-section-title">Social</h3>
             <div className="footer-social">
-              <a href="https://github.com/Smritirai005" target="_blank" rel="noopener noreferrer" className="social-link-footer">
+              <a href={LINKS.github} target="_blank" rel="noopener noreferrer" className="social-link-footer">
                 <Github size={20} />
                 <span>GitHub</span>
               </a>
-              <a href="https://linkedin.com/in/SmritiRai" target="_blank" rel="noopener noreferrer" className="social-link-footer">
+              <a href={LINKS.linkedin} target="_blank" rel="noopener noreferrer" className="social-link-footer">
                 <Linkedin size={20} />
                 <span>LinkedIn</span>
+              </a>
+              <a href={LINKS.leetcode} target="_blank" rel="noopener noreferrer" className="social-link-footer">
+                <Code2 size={20} />
+                <span>LeetCode</span>
+              </a>
+              <a
+                href={LINKS.resume}
+                download="Smriti_Rai_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-link-footer"
+              >
+                <Download size={20} />
+                <span>Resume</span>
               </a>
             </div>
           </div>
@@ -52,6 +67,7 @@ const Footer = () => {
             <div className="footer-links">
               <a href="#about" className="footer-link">About</a>
               <a href="#projects" className="footer-link">Projects</a>
+              <a href="#tech-stack" className="footer-link">Tech Stack</a>
               <a href="#experience" className="footer-link">Experience</a>
               <a href="#contact" className="footer-link">Contact</a>
             </div>
@@ -72,4 +88,3 @@ const Footer = () => {
 };
 
 export default Footer;
-

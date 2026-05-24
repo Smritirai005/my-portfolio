@@ -1,0 +1,101 @@
+.tech-stack {
+  padding: 100px 20px;
+}
+
+.tech-stack-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.tech-stack-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.tech-block {
+  padding: 24px;
+  border-radius: 4px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.light-mode .tech-block {
+  background: var(--block-face-light);
+  border: 3px solid var(--block-edge-light);
+  box-shadow: var(--block-shadow-light);
+}
+
+.dark-mode .tech-block {
+  background: var(--block-face-dark);
+  border: 3px solid var(--block-edge-dark);
+  box-shadow: var(--block-shadow-dark);
+}
+
+.tech-block:hover {
+  transform: translate(-3px, -3px);
+}
+
+.light-mode .tech-block:hover {
+  box-shadow: 8px 8px 0 var(--block-shadow-color-light), 10px 10px 0 rgba(0, 0, 0, 0.08);
+}
+
+.dark-mode .tech-block:hover {
+  box-shadow: 8px 8px 0 var(--block-shadow-color-dark), 10px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.tech-block-title {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+  border-bottom: 2px dashed;
+}
+
+.light-mode .tech-block-title {
+  color: var(--light-text);
+  border-color: var(--light-accent-light);
+}
+
+.dark-mode .tech-block-title {
+  color: var(--dark-text);
+  border-color: var(--dark-border);
+}
+
+.tech-block-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tech-block-tag {
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 2px;
+  letter-spacing: 0.02em;
+}
+
+.light-mode .tech-block-tag {
+  background: var(--light-accent-lighter);
+  color: var(--light-accent);
+  border: 2px solid var(--light-accent-light);
+  box-shadow: 2px 2px 0 rgba(255, 107, 157, 0.25);
+}
+
+.dark-mode .tech-block-tag {
+  background: #1a1a1a;
+  color: var(--dark-accent-light);
+  border: 2px solid #333;
+  box-shadow: 2px 2px 0 #000;
+}
+
+@media (max-width: 768px) {
+  .tech-stack {
+    padding: 60px 15px;
+  }
+
+  .tech-stack-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}

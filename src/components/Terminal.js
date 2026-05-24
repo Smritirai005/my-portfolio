@@ -19,6 +19,8 @@ const Terminal = () => {
 - education: Check my educational background
 - contact: Get my contact information
 - projects: View my projects
+- resume: Get my resume link
+- leetcode: LeetCode profile
 - clear: Clear the terminal
 - help: Show this help message`,
 
@@ -50,16 +52,22 @@ Experienced in building AI-driven dashboards, integrating LLMs, and deploying co
     contact: `Contact Information:
 • Email: smritirai2005@gmail.com
 • GitHub: github.com/Smritirai005
-• LinkedIn: linkedin.com/in/SmritiRai`,
+• LinkedIn: linkedin.com/in/smriti-rai-79251328b
+• LeetCode: leetcode.com/u/Smritirai
+• Resume: drive.google.com (type "resume" for link)`,
+
+    resume: `Resume:
+• Download: Google Drive PDF
+• View online: drive.google.com/file/d/1YZAQHeRhujdmlXycs-W8BbiSKNySGSbE`,
 
     projects: `Featured Projects:
-• LogSentinel (March 2026)
-  - Real-time log anomaly detection with an LSTM Autoencoder.
-  - AWS pipeline: CloudWatch → Kinesis → Lambda → SageMaker; alerts via SNS; Grafana dashboard.
+• Vector DB AI — C++ vector DB (HNSW, KD-Tree, RAG + Ollama)
+• LogSentinel — AWS LSTM log anomaly pipeline + Grafana
+• Fealth — AI finance app (Clerk, Inngest, Resend)
+• Urja Arena — Eco gamified app (Top 10 SIH) + live on Vercel
+• Music App — React Native`,
 
-• Urja Arena (April 2025)
-  - Gamified environmental learning platform with quizzes, tasks, leaderboards.
-  - AI chatbot for concept explanations and personalized learning support.`,
+    leetcode: `LeetCode: leetcode.com/u/Smritirai`,
 
     clear: ''
   };

@@ -40,43 +40,80 @@
   gap: 15px;
 }
 
-.social-link {
+.social-link.block-social {
   display: flex;
   align-items: center;
   gap: 12px;
   text-decoration: none;
-  padding: 12px 20px;
-  border-radius: 12px;
+  padding: 14px 20px;
+  border-radius: 2px;
   font-weight: 500;
-  transition: all 0.3s ease;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-.light-mode .social-link {
-  background: var(--light-bg-secondary);
+.social-label {
+  font-weight: 600;
+  min-width: 72px;
+}
+
+.social-text {
+  margin-left: auto;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+.social-link.block-social.light-mode {
+  background: var(--block-face-light);
   color: var(--light-text);
-  border: 1px solid var(--light-border);
+  border: 3px solid var(--block-edge-light);
+  box-shadow: 4px 4px 0 var(--block-shadow-color-light);
 }
 
-.light-mode .social-link:hover {
-  background: var(--light-accent-lighter);
-  border-color: var(--light-accent-light);
+.social-link.block-social.light-mode:hover {
+  transform: translate(-3px, -3px);
   color: var(--light-accent);
-  transform: translateX(5px);
-  box-shadow: 0 4px 12px var(--light-shadow);
+  box-shadow: 6px 6px 0 var(--block-shadow-color-light);
 }
 
-.dark-mode .social-link {
-  background: var(--dark-bg-secondary);
+.social-link.block-social.dark-mode {
+  background: var(--block-face-dark);
   color: var(--dark-text);
-  border: 1px solid var(--dark-border);
+  border: 3px solid var(--block-edge-dark);
+  box-shadow: 4px 4px 0 var(--block-shadow-color-dark);
 }
 
-.dark-mode .social-link:hover {
-  background: var(--dark-border);
-  border-color: var(--dark-accent);
+.social-link.block-social.dark-mode:hover {
+  transform: translate(-3px, -3px);
   color: var(--dark-accent);
-  transform: translateX(5px);
-  box-shadow: 0 4px 12px var(--dark-shadow);
+  box-shadow: 6px 6px 0 #000;
+}
+
+.contact-form-container.block-panel {
+  border-radius: 4px;
+}
+
+.light-mode .contact-form-container.block-panel {
+  border: 3px solid var(--block-edge-light);
+  box-shadow: 6px 6px 0 var(--block-shadow-color-light);
+}
+
+.dark-mode .contact-form-container.block-panel {
+  border: 3px solid var(--block-edge-dark);
+  box-shadow: 6px 6px 0 var(--block-shadow-color-dark);
+}
+
+.submit-btn.block-btn-submit {
+  border-radius: 2px;
+}
+
+.light-mode .submit-btn.block-btn-submit {
+  border: 2px solid #e0558a;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.12);
+}
+
+.dark-mode .submit-btn.block-btn-submit {
+  border: 2px solid #b84d73;
+  box-shadow: 4px 4px 0 #000;
 }
 
 .contact-form-container {

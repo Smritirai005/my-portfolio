@@ -113,6 +113,63 @@
   box-shadow: 0 4px 12px var(--dark-shadow);
 }
 
+.about-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 28px;
+}
+
+.resume-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 24px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: 2px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.resume-btn.block-btn.light-mode {
+  background: var(--light-accent);
+  color: white;
+  border: 3px solid #e0558a;
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.resume-btn.block-btn.light-mode:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.15);
+}
+
+.resume-btn.block-btn.dark-mode {
+  background: var(--dark-accent);
+  color: white;
+  border: 3px solid #b84d73;
+  box-shadow: 5px 5px 0 #000;
+}
+
+.resume-btn.block-btn.dark-mode:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 8px 8px 0 #000;
+}
+
+.resume-btn-secondary.light-mode {
+  background: var(--block-face-light);
+  color: var(--light-accent);
+  border: 3px solid var(--block-edge-light);
+  box-shadow: 5px 5px 0 var(--block-shadow-color-light);
+}
+
+.resume-btn-secondary.dark-mode {
+  background: var(--block-face-dark);
+  color: var(--dark-accent-light);
+  border: 3px solid var(--block-edge-dark);
+  box-shadow: 5px 5px 0 var(--block-shadow-color-dark);
+}
 
 @media (max-width: 968px) {
   .about {

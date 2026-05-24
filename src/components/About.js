@@ -1,5 +1,7 @@
 import React, { useContext } from 'react';
+import { Download } from 'lucide-react';
 import ThemeContext from '../context/ThemeContext';
+import { LINKS } from '../data/links';
 import Terminal from './Terminal';
 import './About.css';
 
@@ -28,6 +30,26 @@ const About = () => {
             <span className="tag">Docker</span>
             <span className="tag">React</span>
           </div>
+          <div className="about-actions">
+            <a
+              href={LINKS.resume}
+              className={`resume-btn block-btn ${theme}-mode`}
+              download="Smriti_Rai_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Download size={20} />
+              <span>Download Resume</span>
+            </a>
+            <a
+              href={LINKS.resumeView}
+              className={`resume-btn resume-btn-secondary block-btn ${theme}-mode`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Resume
+            </a>
+          </div>
         </div>
         <Terminal />
       </div>
@@ -36,4 +58,3 @@ const About = () => {
 };
 
 export default About;
-
